@@ -50,7 +50,7 @@ const Login = (props) => {
                 <input type="text" placeholder="abc" className="border border-black p-1 rounded my-2 w-52" onChange={handleuserInput}></input>
                 <input type="text" placeholder="123" className="border border-black p-1 rounded my-2 w-52" onChange={handlepassInput}></input>
 
-                <button className="bg-[#8272DA] w-24 p-1 border rounded-md " onClick={handleCheck}>Login</button>
+                <button className="bg-[#f1e168] w-24 p-1 border rounded-md " onClick={handleCheck}>Login</button>
 
                 <p className="text-gray-500">Don't have an account? <Link to={"/signup"} className="underline text-black">Signup</Link></p>
             </div>
