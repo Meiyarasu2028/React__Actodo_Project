@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom"
+import login from "./assets/Images/Loginbackground.jpeg"
 
 const Login = (props) => {
 
@@ -42,13 +43,13 @@ const Login = (props) => {
 
     return (
         <div className="bg-black p-10">
-            <div className="bg-white p-10 flex flex-col gap-2">
+            <div className="bg-white p-10 flex flex-col gap-2 items-center border rounded-md">
                 <h1 className="text-3xl font-medium">Hey Hii</h1>
                 {checkUser ? <p>I help you manage your activities after you login :)</p> : <p className="text-red-600">Pleace signUp Before You Login!!</p>}
 
 
-                <input type="text" placeholder="abc" className="border border-black p-1 rounded my-2 w-52" onChange={handleuserInput}></input>
-                <input type="text" placeholder="123" className="border border-black p-1 rounded my-2 w-52" onChange={handlepassInput}></input>
+                <input type="text" placeholder="Username" className="border border-black p-1 rounded my-2 w-52" onChange={handleuserInput}></input>
+                <input type="password" placeholder="password" className="border border-black p-1 rounded my-2 w-52" onChange={handlepassInput}></input>
 
                 <button className="bg-[#8272DA] w-24 p-1 border rounded-md " onClick={handleCheck}>Login</button>
 
