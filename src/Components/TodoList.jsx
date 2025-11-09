@@ -11,10 +11,10 @@ const TodoList = (props) => {
             <h1 className="text-2xl font-medium mb-2">Today's Activity</h1>
 
             {
-                activityarr.length === 0 ? <p>you have't any activity yet</p> :
+                activityarr.length === 0 ? <p className="text-red-500">you have't any activity yet</p> :
 
                     activityarr.map(function (item, index) {
-                        return <TodoItem item={item} index={index} activityarr={activityarr} setactivityarr={setactivityarr}></TodoItem>
+                        return <TodoItem key={index} item={item} index={index} activityarr={activityarr} setactivityarr={setactivityarr}></TodoItem>
 
                     })
             }

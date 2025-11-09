@@ -4,7 +4,7 @@ import { useState } from "react"
 
 const Todocontainer = () => {
 
-    const [activityarr, setactivityarr] = useState(["Weakup at 6.30", "Have a break fast"])
+    const [activityarr, setactivityarr] = useState([])
 
     return (
 

@@ -33,7 +33,7 @@ const Signup = (props) => {
 
                 <input type="text" placeholder="Username" className="border border-black p-1 rounded my-2 w-52" onChange={handleuserInput}></input>
                 <input type="text" placeholder="Password" className="border border-black p-1 rounded my-2 w-52" onChange={handlepassInput}></input>
-                <input type="text" placeholder="Confirm Password" className="border border-black p-1 rounded my-2 w-52"></input>
+                <input type="text" placeholder="Confirm Password" className="border border-black p-1 rounded my-2 w-52" required></input>
 
                 <button className="bg-yellow-500 w-28 p-1 border rounded-md " onClick={handleAdd}>Signup</button>
                 <p className="text-gray-500">Already have an account? <Link to={"/login"} className="underline text-black">login</Link></p>
